@@ -5,8 +5,8 @@
 using namespace std;
 
 struct DetailAlamat {
-    string kota;
     string desa;
+    string kota;
 };
 
 struct Mahasiswa {
@@ -26,11 +26,11 @@ int main(){
     cout << "Nama Mahasiswa:";
     cin >> mhs.nama;
 
-    cout << "Alamat Mahasiswa:";
-    cout << "\t Nama Kota:";
-    cin >> mhs.alamat.kota;
-    cout << "\t Nama Desa: ";
+    cout << "alamat mahasiswa : " << endl;
+    cout << "\t nama desa : ";
     cin >> mhs.alamat.desa;
+    cout << "\t Nama Kota : ";
+    cin >> mhs.alamat.kota;
 
     cout << "Umur Mahasiswa:";
     cin >> mhs.umur;
@@ -39,8 +39,8 @@ int main(){
     cout << "\n NIM:" << mhs.nim;
     cout << "\n Nama: " << mhs.nama;
     cout << "\n Alamat: ";
-    cout << "\n Kota:" << mhs.alamat.kota;
-    cout << "\n Desa:" << mhs.alamat.desa;
+    cout << "\n\t Desa:" << mhs.alamat.desa;
+    cout << "\n\t Kota:" << mhs.alamat.kota;
     cout << "\n Umur: " << mhs.umur;
 }
 
